@@ -32,6 +32,7 @@ export default function SuccessPage() {
           logoText="Betaling Gelukt!"
           description="Bedankt voor je betaling. Je kunt nu direct aan de slag met het genereren van je professionele brief."
           buttons={[{ text: "Start met schrijven", href: "/" }]}
+          background={{ variant: "plain" }}
         />
         <FooterMedia
           logoText="BriefBaas AI"
