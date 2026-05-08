@@ -51,7 +51,6 @@ export default function PricingPage() {
 
         <FooterMedia
           logoText="BriefBaas AI"
-          videoSrc="/placeholder-video.mp4"
           columns={[
             { title: "Platform", items: [{ label: "Home", href: "/" }, { label: "Prijzen", href: "/pricing" }] },
             { title: "Juridisch", items: [{ label: "Disclaimer", href: "#" }, { label: "Algemene voorwaarden", href: "#" }] },
