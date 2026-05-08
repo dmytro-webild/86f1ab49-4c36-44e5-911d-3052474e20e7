@@ -32,6 +32,7 @@ export default function CancelledPage() {
           logoText="Betaling geannuleerd"
           description="Je betaling is geannuleerd. Geen zorgen, je kunt het op elk gewenst moment opnieuw proberen."
           buttons={[{ text: "Probeer opnieuw", href: "/pricing" }, { text: "Terug naar home", href: "/" }]}
+          background={{ variant: "plain" }}
         />
         <FooterMedia
           logoText="BriefBaas AI"
