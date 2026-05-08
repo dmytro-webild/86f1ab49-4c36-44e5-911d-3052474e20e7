@@ -4,13 +4,13 @@ import { useState } from "react";
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import ReactLenis from "lenis/react";
 import NavbarStyleApple from "@/components/navbar/NavbarStyleApple/NavbarStyleApple";
-import { Download, FileText, Printer, Save, AlertTriangle } from "lucide-react";
+import { Download, FileText, Printer, AlertTriangle } from "lucide-react";
 
 export default function ResultPage() {
   const [letterContent, setLetterContent] = useState("Geachte heer/mevrouw,\n\nHierbij wil ik formeel mijn ontevredenheid uiten over de recente aankoop. Het product voldoet niet aan de verwachtingen...\n\nMet vriendelijke groet,");
 
   return (
-    <ThemeProvider>
+    <ThemeProvider defaultButtonVariant="expand-hover" defaultTextAnimation="background-highlight" borderRadius="pill" contentWidth="medium" sizing="medium" background="none" cardStyle="glass-elevated" primaryButtonStyle="gradient" secondaryButtonStyle="glass" headingFontWeight="normal">
       <ReactLenis root>
         <NavbarStyleApple 
           navItems={[{ name: "Home", id: "/" }, { name: "Prijzen", id: "/pricing" }]} 
