@@ -136,7 +136,7 @@ export default function LandingPage() {
       plans={[
         { id: "free", badge: "Gratis", price: "€0", subtitle: "Voorbeelden bekijken", features: ["Bekijk voorbeelden", "Beperkte uitleg", "Geen downloads"], buttons: [{ text: "Begin nu" }] },
         { id: "single", badge: "Populair", price: "€9,99", subtitle: "Eén brief", features: ["Volledige klachtbrief", "Toonkeuze", "Download PDF/Word"], buttons: [{ text: "Koop nu" }] },
-        { id: "complete", badge: "Compleet", price: "€29,99", subtitle: "Compleet pakket", features: ["Klacht + Ingebrekestelling", "Stappenplan", "Bewijschecklist"], buttons: [{ text: "Koop nu" }] },
+        { id: "complete", badge: "Compleet", price: "€29,99", subtitle: "Compleet pakket", features: ["Klacht + Ingebre + Ingebrekestelling", "Stappenplan", "Bewijschecklist"], buttons: [{ text: "Koop nu" }] },
       ]}
       title="Kies je pakket"
       description="Betaal alleen voor wat je nodig hebt."
@@ -162,7 +162,7 @@ export default function LandingPage() {
       textboxLayout="default"
       useInvertedBackground={false}
       faqs={[
-        { id: "f1", title: "Is BriefBaas AI een advocaat?", content: "Nee. BriefBaas AI geeft geen juridisch advies." },
+        { id: "f1", title: "Is BriefBaas AI een advocaat?", content: "Nee, BriefBaas AI is geen advocatenkantoor en biedt geen juridisch advies. Echter, onze tools zijn wel ontwikkeld door juridisch experts die diepgaand inzicht hebben in de dagelijkse uitdagingen en problemen binnen deze juridische sector, zodat jij precies krijgt wat je nodig hebt." },
         { id: "f2", title: "Kan ik mijn brief aanpassen?", content: "Ja, je kunt de tekst direct in de editor aanpassen." },
         { id: "f3", title: "Worden mijn gegevens veilig opgeslagen?", content: "Ja, wij gaan veilig om met jouw persoonsgegevens." },
         { id: "f4", title: "Kan ik de brief downloaden als PDF?", content: "Ja, je kunt direct downloaden als PDF of Word." },
