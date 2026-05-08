@@ -12,7 +12,7 @@ export default function DisclaimerPage() {
         layout="page"
         title="Disclaimer"
         sections={[
-          { heading: "Juridisch", content: { type: "paragraph", text: "BriefBaas AI is geen juridisch adviseur. Raadpleeg bij complexe problemen altijd een advocaat." } }
+          { heading: "Juridisch", content: { text: "BriefBaas AI is geen juridisch adviseur. Raadpleeg bij complexe problemen altijd een advocaat." } }
         ]}
       />
       <FooterMedia logoText="BriefBaas AI" columns={[{title: "Links", items: [{label: "Home", href: "/"}]}]} videoSrc="https://assets.mixkit.co/videos/preview/mixkit-lawyer-office-desk-4395-large.mp4" />

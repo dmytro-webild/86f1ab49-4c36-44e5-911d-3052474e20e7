@@ -12,7 +12,7 @@ export default function TermsPage() {
         layout="page"
         title="Algemene Voorwaarden"
         sections={[
-          { heading: "1. Gebruik", content: { type: "paragraph", text: "Door BriefBaas AI te gebruiken ga je akkoord met deze voorwaarden." } }
+          { heading: "1. Gebruik", content: { text: "Door BriefBaas AI te gebruiken ga je akkoord met deze voorwaarden." } }
         ]}
       />
       <FooterMedia logoText="BriefBaas AI" columns={[{title: "Links", items: [{label: "Home", href: "/"}]}]} videoSrc="https://assets.mixkit.co/videos/preview/mixkit-lawyer-office-desk-4395-large.mp4" />
