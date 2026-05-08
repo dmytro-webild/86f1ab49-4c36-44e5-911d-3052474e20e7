@@ -37,10 +37,10 @@ export default function PricingPage() {
               textboxLayout="default"
               useInvertedBackground={false}
               title="Kies je pakket"
-              description="Stripe-powered beveiligde betalingen voor jouw juridische documenten."
+              description="Direct aan de slag met jouw juridische documenten."
               plans={[
-                { id: "single", badge: "Populair", price: "€9,99", subtitle: "Eén brief", features: ["Volledige klachtbrief", "Toonkeuze", "Direct downloaden"], buttons: [{ text: "Koop nu" }] },
-                { id: "pro", badge: "Professioneel", price: "€29,99", subtitle: "Compleet pakket", features: ["Klacht + Ingebrekestelling", "Juridische checklist", "Prioriteit support"], buttons: [{ text: "Koop nu" }] }
+                { id: "single", badge: "Populair", price: "€9,99", subtitle: "Eén brief", features: ["Volledige klachtbrief", "Toonkeuze", "Direct downloaden"], buttons: [{ text: "Koop nu", href: "https://buy.stripe.com/test_single" }] },
+                { id: "pro", badge: "Professioneel", price: "€29,99", subtitle: "Compleet pakket", features: ["Klacht + Ingebrekestelling", "Juridische checklist", "Prioriteit support"], buttons: [{ text: "Koop nu", href: "https://buy.stripe.com/test_pro" }] }
               ]}
             />
         </div>
