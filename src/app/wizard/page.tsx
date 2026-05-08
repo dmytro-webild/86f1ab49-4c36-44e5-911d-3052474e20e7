@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import NavbarStyleApple from "@/components/navbar/NavbarStyleApple/NavbarStyleApple";
-import { ChevronRight, FileCheck, Info, User, CheckCircle } from "lucide-react";
+import { ChevronRight, FileCheck, Info } from "lucide-react";
 
 export default function WizardPage() {
   const [step, setStep] = useState(1);
@@ -11,7 +11,7 @@ export default function WizardPage() {
     "Categorie kiezen",    "Gegevens invullen",    "Juridische check",    "Brief genereren"];
 
   return (
-    <ThemeProvider>
+    <ThemeProvider defaultButtonVariant="expand-hover" defaultTextAnimation="background-highlight" borderRadius="pill" contentWidth="medium" sizing="medium" background="none" cardStyle="glass-elevated" primaryButtonStyle="gradient" secondaryButtonStyle="glass" headingFontWeight="normal">
       <NavbarStyleApple
         navItems={[
           { name: "Terug naar home", id: "/" },
