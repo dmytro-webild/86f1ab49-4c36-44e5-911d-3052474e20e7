@@ -33,11 +33,11 @@ export default function LandingPage() {
   <div id="nav" data-section="nav">
       <NavbarStyleApple
       navItems={[
-        { name: "Problemen", id: "#problemen" },
-        { name: "Uitleg", id: "#uitleg" },
-        { name: "Voorbeelden", id: "#voorbeelden" },
+        { name: "Problemen", id: "/#problemen" },
+        { name: "Uitleg", id: "/#uitleg" },
+        { name: "Voorbeelden", id: "/#voorbeelden" },
         { name: "Prijzen", id: "/pricing" },
-        { name: "FAQ", id: "#faq" },
+        { name: "FAQ", id: "/#faq" },
       ]}
       brandName="BriefBaas AI"
     />
@@ -50,7 +50,7 @@ export default function LandingPage() {
       description="Maak binnen 2 minuten een sterke klachtbrief voor problemen met webshops, auto's, pakketdiensten en meer. Direct te downloaden in duidelijke taal."
       buttons={[
         { text: "Start direct", href: "/pricing" },
-        { text: "Bekijk voorbeelden", href: "#voorbeelden" },
+        { text: "Bekijk voorbeelden", href: "/#voorbeelden" },
       ]}
       buttonAnimation="slide-up"
       mediaAnimation="opacity"
@@ -80,11 +80,11 @@ export default function LandingPage() {
       textboxLayout="default"
       useInvertedBackground={false}
       features={[
-        { icon: Mail, title: "Product niet geleverd", description: "Direct geformuleerd volgens consumentenrecht om de leverplicht te benadrukken." },
-        { icon: AlertCircle, title: "Beschadigd product", description: "Met verwijzing naar de conformiteitseis, essentieel voor een succesvolle claim." },
-        { icon: Clock, title: "Retourbetaling uitblijft", description: "Juridisch onderbouwde sommatie om de terugbetalingstermijn te handhaven." },
-        { icon: Search, title: "Verborgen gebrek", description: "Focus op de onderzoeksplicht en mededelingsplicht bij koopovereenkomsten." },
-        { icon: BookOpen, title: "Abonnement opzeggen", description: "Duidelijk opzegbericht met inachtneming van de wettelijke opzegtermijnen." },
+        { icon: Mail, title: "Product niet geleverd", description: "Direct geformuleerd volgens consumentenrecht om de leverplicht te benadrukken.", imageSrc: "https://images.unsplash.com/photo-1557683316-973673baf926?q=80&w=800" },
+        { icon: AlertCircle, title: "Beschadigd product", description: "Met verwijzing naar de conformiteitseis, essentieel voor een succesvolle claim.", imageSrc: "https://images.unsplash.com/photo-1563986768609-322da13575f3?q=80&w=800" },
+        { icon: Clock, title: "Retourbetaling uitblijft", description: "Juridisch onderbouwde sommatie om de terugbetalingstermijn te handhaven.", imageSrc: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?q=80&w=800" },
+        { icon: Search, title: "Verborgen gebrek", description: "Focus op de onderzoeksplicht en mededelingsplicht bij koopovereenkomsten.", imageSrc: "https://images.unsplash.com/photo-1584433148459-74410fded98a?q=80&w=800" },
+        { icon: BookOpen, title: "Abonnement opzeggen", description: "Duidelijk opzegbericht met inachtneming van de wettelijke opzegtermijnen.", imageSrc: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=800" },
       ]}
       title="Voorbeelden van brieven"
       description="Bekijk onze meest gebruikte briefmodellen en de juridische focus per voorbeeld."
@@ -117,10 +117,10 @@ export default function LandingPage() {
       gridVariant="four-items-2x2-equal-grid"
       useInvertedBackground={false}
       products={[
-        { id: "p1", brand: "Webshop", name: "Product niet geleverd", price: "Klaar voor gebruik", rating: 5, reviewCount: "1.2k", imageSrc: "" },
-        { id: "p2", brand: "Logistiek", name: "Pakket kwijt", price: "Klaar voor gebruik", rating: 5, reviewCount: "900", imageSrc: "" },
-        { id: "p3", brand: "Automotive", name: "Verborgen gebrek", price: "Klaar voor gebruik", rating: 5, reviewCount: "450", imageSrc: "" },
-        { id: "p4", brand: "Garantie", name: "Defect product", price: "Klaar voor gebruik", rating: 5, reviewCount: "750", imageSrc: "" },
+        { id: "p1", brand: "Webshop", name: "Product niet geleverd", price: "Klaar voor gebruik", rating: 5, reviewCount: "1.2k", imageSrc: "https://images.unsplash.com/photo-1557683316-973673baf926?q=80&w=800" },
+        { id: "p2", brand: "Logistiek", name: "Pakket kwijt", price: "Klaar voor gebruik", rating: 5, reviewCount: "900", imageSrc: "https://images.unsplash.com/photo-1557683316-973673baf926?q=80&w=800" },
+        { id: "p3", brand: "Automotive", name: "Verborgen gebrek", price: "Klaar voor gebruik", rating: 5, reviewCount: "450", imageSrc: "https://images.unsplash.com/photo-1557683316-973673baf926?q=80&w=800" },
+        { id: "p4", brand: "Garantie", name: "Defect product", price: "Klaar voor gebruik", rating: 5, reviewCount: "750", imageSrc: "https://images.unsplash.com/photo-1557683316-973673baf926?q=80&w=800" },
       ]}
       title="Kies je probleem"
       description="Voor welke situatie heb je hulp nodig?"
@@ -144,9 +144,9 @@ export default function LandingPage() {
   <div id="footer" data-section="footer">
       <FooterMedia
       logoText="BriefBaas AI"
-      imageSrc="/placeholder.png"
+      imageSrc="https://images.unsplash.com/photo-1557683316-973673baf926?q=80&w=800"
       columns={[
-        { title: "Platform", items: [{ label: "Problemen", href: "#problemen" }, { label: "Prijzen", href: "/pricing" }] },
+        { title: "Platform", items: [{ label: "Problemen", href: "/#problemen" }, { label: "Prijzen", href: "/pricing" }] },
         { title: "Juridisch", items: [{ label: "Disclaimer", href: "#" }, { label: "Algemene voorwaarden", href: "#" }] },
       ]}
       copyrightText="© 2025 BriefBaas AI"
