@@ -33,14 +33,10 @@ export default function LandingPage() {
   <div id="nav" data-section="nav">
       <NavbarStyleApple
       navItems={[
-        {
-          name: "Problemen",          id: "#problemen"},
-        {
-          name: "Uitleg",          id: "#uitleg"},
-        {
-          name: "Prijzen",          id: "#prijzen"},
-        {
-          name: "FAQ",          id: "#faq"},
+        { name: "Problemen", id: "#problemen" },
+        { name: "Uitleg", id: "#uitleg" },
+        { name: "Prijzen", id: "/pricing" },
+        { name: "FAQ", id: "#faq" },
       ]}
       brandName="BriefBaas AI"
     />
@@ -48,15 +44,12 @@ export default function LandingPage() {
 
   <div id="hero" data-section="hero">
       <HeroLogoBillboard
-      background={{
-        variant: "gradient-bars"}}
+      background={{ variant: "gradient-bars" }}
       logoText="BriefBaas AI"
       description="Maak binnen 2 minuten een sterke klachtbrief voor problemen met webshops, auto's, pakketdiensten en meer. Direct te downloaden in duidelijke taal."
       buttons={[
-        {
-          text: "Start gratis",          href: "#prijzen"},
-        {
-          text: "Bekijk voorbeelden",          href: "#problemen"},
+        { text: "Start gratis", href: "/pricing" },
+        { text: "Bekijk voorbeelden", href: "#problemen" },
       ]}
       buttonAnimation="slide-up"
       imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DRLqekDrDgj7cwgtaTSZZ1Xtzm/modern-dutch-consumer-interface-clean-so-1778242008423-9af5a9d1.png"
@@ -70,21 +63,11 @@ export default function LandingPage() {
       textboxLayout="default"
       useInvertedBackground={true}
       features={[
-        {
-          icon: CheckCircle,
-          title: "Kies je probleem",          description: "Selecteer de categorie die past bij jouw situatie."},
-        {
-          icon: MessageSquare,
-          title: "Beantwoord vragen",          description: "Vul de details in over wat er misging."},
-        {
-          icon: PenTool,
-          title: "Bepaal de toon",          description: "Kies of je vriendelijk of zakelijk wilt klinken."},
-        {
-          icon: FileText,
-          title: "Ontvang conceptbrief",          description: "Genereer direct een concept met onze AI."},
-        {
-          icon: Download,
-          title: "Download je document",          description: "Download als PDF of Word en verstuur direct."},
+        { icon: CheckCircle, title: "Kies je probleem", description: "Selecteer de categorie die past bij jouw situatie." },
+        { icon: MessageSquare, title: "Beantwoord vragen", description: "Vul de details in over wat er misging." },
+        { icon: PenTool, title: "Bepaal de toon", description: "Kies of je vriendelijk of zakelijk wilt klinken." },
+        { icon: FileText, title: "Ontvang conceptbrief", description: "Genereer direct een concept met onze AI." },
+        { icon: Download, title: "Download je document", description: "Download als PDF of Word en verstuur direct." },
       ]}
       title="Hoe het werkt"
       description="In 5 simpele stappen naar een professionele brief."
@@ -206,7 +189,7 @@ export default function LandingPage() {
       imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DRLqekDrDgj7cwgtaTSZZ1Xtzm/modern-dutch-consumer-interface-clean-so-1778242138111-9a9309d0.png"
       logoText="BriefBaas AI"
       columns={[
-        { title: "Platform", items: [{ label: "Problemen", href: "#problemen" }, { label: "Prijzen", href: "#prijzen" }] },
+        { title: "Platform", items: [{ label: "Problemen", href: "#problemen" }, { label: "Prijzen", href: "/pricing" }] },
         { title: "Juridisch", items: [{ label: "Disclaimer", href: "#" }, { label: "Algemene voorwaarden", href: "#" }] },
       ]}
       copyrightText="© 2025 BriefBaas AI"
