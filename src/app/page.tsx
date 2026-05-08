@@ -33,10 +33,11 @@ export default function LandingPage() {
   <div id="nav" data-section="nav">
       <NavbarStyleApple
       navItems={[
-        { name: "Problemen", id: "#problemen" },
-        { name: "Uitleg", id: "#uitleg" },
+        { name: "Home", id: "/" },
+        { name: "Over ons", id: "/about" },
+        { name: "Hoe het werkt", id: "/how-it-works" },
         { name: "Prijzen", id: "/pricing" },
-        { name: "FAQ", id: "#faq" },
+        { name: "FAQ", id: "/faq" },
       ]}
       brandName="BriefBaas AI"
     />
@@ -49,7 +50,7 @@ export default function LandingPage() {
       description="Maak binnen 2 minuten een sterke klachtbrief voor problemen met webshops, auto's, pakketdiensten en meer. Direct te downloaden in duidelijke taal."
       buttons={[
         { text: "Start gratis", href: "/pricing" },
-        { text: "Bekijk voorbeelden", href: "#problemen" },
+        { text: "Bekijk voorbeelden", href: "/#problemen" },
       ]}
       buttonAnimation="slide-up"
       imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DRLqekDrDgj7cwgtaTSZZ1Xtzm/modern-dutch-consumer-interface-clean-so-1778242008423-9af5a9d1.png"
@@ -189,8 +190,8 @@ export default function LandingPage() {
       imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DRLqekDrDgj7cwgtaTSZZ1Xtzm/modern-dutch-consumer-interface-clean-so-1778242138111-9a9309d0.png?_wi=1"
       logoText="BriefBaas AI"
       columns={[
-        { title: "Platform", items: [{ label: "Problemen", href: "#problemen" }, { label: "Prijzen", href: "/pricing" }] },
-        { title: "Juridisch", items: [{ label: "Disclaimer", href: "#" }, { label: "Algemene voorwaarden", href: "#" }] },
+        { title: "Platform", items: [{ label: "Home", href: "/" }, { label: "Problemen", href: "/#problemen" }, { label: "Prijzen", href: "/pricing" }] },
+        { title: "Juridisch", items: [{ label: "Disclaimer", href: "/disclaimer" }, { label: "Algemene voorwaarden", href: "/terms" }, { label: "Privacy", href: "/privacy" }] },
       ]}
       copyrightText="© 2025 BriefBaas AI"
     />
