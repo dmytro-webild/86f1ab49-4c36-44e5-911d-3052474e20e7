@@ -36,7 +36,7 @@ export default function SuccessPage() {
         />
         <FooterMedia
           logoText="BriefBaas AI"
-          imageSrc="https://images.unsplash.com/photo-1557683316-973673baf926?q=80&w=800"
+          imageSrc="https://images.unsplash.com/photo-1557683316-973673baf926?q=80&w=800&_wi=1"
           columns={[
             { title: "Platform", items: [{ label: "Home", href: "/" }, { label: "Prijzen", href: "/pricing" }] }
           ]}
