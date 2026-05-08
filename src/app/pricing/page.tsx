@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from "react";
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import ReactLenis from "lenis/react";
 import NavbarStyleApple from '@/components/navbar/NavbarStyleApple/NavbarStyleApple';
@@ -7,6 +8,18 @@ import PricingCardEight from '@/components/sections/pricing/PricingCardEight';
 import FooterMedia from '@/components/sections/footer/FooterMedia';
 
 export default function PricingPage() {
+  const [showModal, setShowModal] = useState<null | string>(null);
+
+  const handlePurchase = (id: string) => {
+    setShowModal(id);
+  };
+
+  const confirmPurchase = (id: string) => {
+    const urls: Record<string, string> = {
+      single: "https://buy.stripe.com/test_3cI9AS7qC69Q9HueQwa3u00",      pro: "https://buy.stripe.com/test_bJe00i6myeGmf1OfUAa3u01"};
+    window.location.href = urls[id];
+  };
+
   return (
     <ThemeProvider
         defaultButtonVariant="expand-hover"
@@ -42,33 +55,33 @@ export default function PricingPage() {
                   badge: "Basis", 
                   price: "€9,99", 
                   subtitle: "Eén brief", 
-                  features: [
-                    "Volledige klachtbrief", 
-                    "Toonkeuze voor je brief", 
-                    "Direct downloaden als PDF/Word", 
-                    "Standaard ondersteuning"
-                  ], 
-                  buttons: [{ text: "Koop nu", href: "https://buy.stripe.com/test_3cI9AS7qC69Q9HueQwa3u00" }] 
+                  features: ["Volledige klachtbrief", "Toonkeuze voor je brief", "Direct downloaden als PDF/Word", "Standaard ondersteuning"],
+                  buttons: [{ text: "Koop nu", onClick: () => handlePurchase("single") }] 
                 },
                 { 
                   id: "pro", 
                   badge: "Professioneel", 
                   price: "€29,99", 
                   subtitle: "Compleet pakket", 
-                  features: [
-                    "Alle functies van het basispakket",                    "Inclusief formele ingebrekestelling", 
-                    "Stap-voor-stap juridisch plan", 
-                    "Bewijschecklist voor sterke dossiervorming",                    "Prioriteit ondersteuning"
-                  ], 
-                  buttons: [{ text: "Koop nu", href: "https://buy.stripe.com/test_bJe00i6myeGmf1OfUAa3u01" }] 
+                  features: ["Alle functies van het basispakket", "Inclusief formele ingebrekestelling", "Stap-voor-stap juridisch plan", "Bewijschecklist voor sterke dossiervorming", "Prioriteit ondersteuning"],
+                  buttons: [{ text: "Koop nu", onClick: () => handlePurchase("pro") }] 
                 }
               ]}
             />
         </div>
 
-        <div className="py-10 text-center text-sm opacity-60 px-4">
-            <p>© 2025 BriefBaas AI. Disclaimer: BriefBaas AI is een hulpmiddel voor het genereren van teksten en biedt geen juridisch advies. Gebruik van deze service is voor eigen risico. Controleer altijd zelf de inhoud van de gegenereerde brieven en of deze van toepassing zijn op jouw specifieke situatie en vigerende wetgeving.</p>
-        </div>
+        {showModal && (
+          <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/50">
+            <div className="bg-white p-8 rounded-2xl max-w-sm w-full shadow-xl">
+              <h2 className="text-xl font-bold mb-4">Bevestig je betaling</h2>
+              <p className="text-gray-600 mb-6">Je staat op het punt om doorverwezen te worden naar Stripe om je betaling van {showModal === 'single' ? '€9,99' : '€29,99'} veilig te voltooien. Klik op doorgaan om verder te gaan.</p>
+              <div className="flex gap-4">
+                <button onClick={() => setShowModal(null)} className="flex-1 px-4 py-2 border rounded-full">Annuleren</button>
+                <button onClick={() => confirmPurchase(showModal)} className="flex-1 px-4 py-2 bg-blue-600 text-white rounded-full">Doorgaan</button>
+              </div>
+            </div>
+          </div>
+        )}
 
         <FooterMedia
           logoText="BriefBaas AI"
