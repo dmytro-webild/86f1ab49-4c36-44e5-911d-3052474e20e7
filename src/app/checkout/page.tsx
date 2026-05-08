@@ -3,20 +3,22 @@
 import { useState } from "react";
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import NavbarStyleApple from "@/components/navbar/NavbarStyleApple/NavbarStyleApple";
+import { useSearchParams } from "next/navigation";
 
 export default function CheckoutPage() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const searchParams = useSearchParams();
+  const priceId = searchParams.get('priceId') || 'price_123'; // Default fallback
 
   const handleCheckout = async () => {
     setLoading(true);
     setError(null);
     try {
-      // In a production app, redirect to Stripe checkout session
-      const response = await fetch('/api/create-checkout-session', {
+      const response = await fetch('/api/checkout', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ items: [{ id: 'premium-letter', price: 999 }] }),
+        body: JSON.stringify({ priceId }),
       });
       const data = await response.json();
       if (data.url) {
@@ -54,7 +56,7 @@ export default function CheckoutPage() {
           <h1 className="text-3xl font-bold mb-6">Checkout</h1>
           <div className="space-y-4 mb-8">
              <div className="flex justify-between py-2 border-b">
-               <span>Premium Klachtbrief</span>
+               <span>Brief Service</span>
                <span className="font-semibold">€9,99</span>
              </div>
              <div className="flex justify-between py-2">

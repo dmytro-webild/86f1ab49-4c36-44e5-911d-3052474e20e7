@@ -1,0 +1,35 @@
+"use client";
+
+import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
+import ReactLenis from "lenis/react";
+import HeroLogoBillboard from '@/components/sections/hero/HeroLogoBillboard';
+import NavbarStyleApple from '@/components/navbar/NavbarStyleApple/NavbarStyleApple';
+import FooterMedia from '@/components/sections/footer/FooterMedia';
+
+export default function CancelledPage() {
+  return (
+    <ThemeProvider>
+      <ReactLenis root>
+        <NavbarStyleApple
+          navItems={[
+            { name: "Home", id: "/" },
+            { name: "Prijzen", id: "/pricing" }
+          ]}
+          brandName="BriefBaas AI"
+        />
+        <HeroLogoBillboard
+          background={{ variant: "gradient-bars" }}
+          logoText="Betaling geannuleerd"
+          description="Je betaling is geannuleerd. Geen zorgen, je kunt het op elk gewenst moment opnieuw proberen."
+          buttons={[{ text: "Probeer opnieuw", href: "/pricing" }, { text: "Terug naar home", href: "/" }]}
+        />
+        <FooterMedia
+          logoText="BriefBaas AI"
+          columns={[
+            { title: "Platform", items: [{ label: "Home", href: "/" }, { label: "Prijzen", href: "/pricing" }] }
+          ]}
+        />
+      </ReactLenis>
+    </ThemeProvider>
+  );
+}
