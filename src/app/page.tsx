@@ -186,7 +186,7 @@ export default function LandingPage() {
 
   <div id="footer" data-section="footer">
       <FooterMedia
-      imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DRLqekDrDgj7cwgtaTSZZ1Xtzm/modern-dutch-consumer-interface-clean-so-1778242138111-9a9309d0.png"
+      imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DRLqekDrDgj7cwgtaTSZZ1Xtzm/modern-dutch-consumer-interface-clean-so-1778242138111-9a9309d0.png?_wi=1"
       logoText="BriefBaas AI"
       columns={[
         { title: "Platform", items: [{ label: "Problemen", href: "#problemen" }, { label: "Prijzen", href: "/pricing" }] },
