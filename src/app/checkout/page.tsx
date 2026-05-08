@@ -12,14 +12,20 @@ export default function CheckoutPage() {
     setLoading(true);
     setError(null);
     try {
-      // Simulate Stripe checkout redirection
-      console.log("Initiating Stripe Checkout...");
-      // In a real application, you would call your backend here to create a session
-      await new Promise((resolve) => setTimeout(resolve, 1500));
-      window.location.href = "/success";
+      // In a production app, redirect to Stripe checkout session
+      const response = await fetch('/api/create-checkout-session', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ items: [{ id: 'premium-letter', price: 999 }] }),
+      });
+      const data = await response.json();
+      if (data.url) {
+        window.location.href = data.url;
+      } else {
+        throw new Error('Geen checkout URL ontvangen');
+      }
     } catch (err) {
       setError("Er ging iets mis bij het starten van de betaling. Probeer het opnieuw.");
-    } finally {
       setLoading(false);
     }
   };
