@@ -13,7 +13,7 @@ export default function ResultPage() {
     <ThemeProvider defaultButtonVariant="expand-hover" defaultTextAnimation="background-highlight" borderRadius="pill" contentWidth="medium" sizing="medium" background="none" cardStyle="glass-elevated" primaryButtonStyle="gradient" secondaryButtonStyle="glass" headingFontWeight="normal">
       <ReactLenis root>
         <NavbarStyleApple 
-          navItems={[{ name: "Home", id: "/" }, { name: "Prijzen", id: "/pricing" }]} 
+          navItems={[{ name: "Home", id: "/" }, { name: "Voorbeelden", id: "/#voorbeelden" }, { name: "Prijzen", id: "/pricing" }]} 
           brandName="BriefBaas AI" 
         />
         <main className="container mx-auto px-6 py-20">
