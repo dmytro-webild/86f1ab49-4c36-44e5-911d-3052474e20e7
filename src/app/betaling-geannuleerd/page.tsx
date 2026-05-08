@@ -24,6 +24,7 @@ export default function CancelledPage() {
         <NavbarStyleApple
           navItems={[
             { name: "Home", id: "/" },
+            { name: "Voorbeelden", id: "/#voorbeelden" },
             { name: "Prijzen", id: "/pricing" }
           ]}
           brandName="BriefBaas AI"
