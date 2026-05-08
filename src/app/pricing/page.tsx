@@ -24,9 +24,7 @@ export default function PricingPage() {
         <NavbarStyleApple
           navItems={[
             { name: "Home", id: "/" },
-            { name: "Problemen", id: "/#problemen" },
             { name: "Prijzen", id: "/pricing" },
-            { name: "FAQ", id: "/#faq" },
           ]}
           brandName="BriefBaas AI"
         />
@@ -39,8 +37,8 @@ export default function PricingPage() {
               title="Kies je pakket"
               description="Direct aan de slag met jouw juridische documenten."
               plans={[
-                { id: "single", badge: "Populair", price: "€9,99", subtitle: "Eén brief", features: ["Volledige klachtbrief", "Toonkeuze", "Direct downloaden"], buttons: [{ text: "Koop nu", href: "https://buy.stripe.com/test_single" }] },
-                { id: "pro", badge: "Professioneel", price: "€29,99", subtitle: "Compleet pakket", features: ["Klacht + Ingebrekestelling", "Juridische checklist", "Prioriteit support"], buttons: [{ text: "Koop nu", href: "https://buy.stripe.com/test_pro" }] }
+                { id: "single", badge: "Basis", price: "€9,99", subtitle: "Eén brief", features: ["Volledige klachtbrief", "Toonkeuze", "Direct downloaden"], buttons: [{ text: "Koop nu", href: "https://buy.stripe.com/test_3cI9AS7qC69Q9HueQwa3u00" }] },
+                { id: "pro", badge: "Professioneel", price: "€29,99", subtitle: "Compleet pakket", features: ["Klacht + Ingebrekestelling", "Juridische checklist", "Prioriteit support"], buttons: [{ text: "Koop nu", href: "https://buy.stripe.com/test_bJe00i6myeGmf1OfUAa3u01" }] }
               ]}
             />
         </div>
