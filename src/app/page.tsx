@@ -37,7 +37,6 @@ export default function LandingPage() {
         { name: "Uitleg", id: "#uitleg" },
         { name: "Prijzen", id: "/pricing" },
         { name: "FAQ", id: "#faq" },
-        { name: "Dashboard", id: "/dashboard" },
       ]}
       brandName="BriefBaas AI"
     />
@@ -190,7 +189,7 @@ export default function LandingPage() {
       imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DRLqekDrDgj7cwgtaTSZZ1Xtzm/modern-dutch-consumer-interface-clean-so-1778242138111-9a9309d0.png?_wi=1"
       logoText="BriefBaas AI"
       columns={[
-        { title: "Platform", items: [{ label: "Problemen", href: "#problemen" }, { label: "Prijzen", href: "/pricing" }, { label: "Dashboard", href: "/dashboard" }] },
+        { title: "Platform", items: [{ label: "Problemen", href: "#problemen" }, { label: "Prijzen", href: "/pricing" }] },
         { title: "Juridisch", items: [{ label: "Disclaimer", href: "#" }, { label: "Algemene voorwaarden", href: "#" }] },
       ]}
       copyrightText="© 2025 BriefBaas AI"

@@ -2,13 +2,12 @@
 
 import { useState } from "react";
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
-import { LayoutDashboard, FileText, User, LogOut, Settings, PlusCircle } from "lucide-react";
+import { FileText, User, LogOut, PlusCircle } from "lucide-react";
 
 export default function DashboardPage() {
-  const [activeTab, setActiveTab] = useState("overview");
+  const [activeTab, setActiveTab] = useState("history");
 
   const menuItems = [
-    { id: "overview", label: "Dashboard Overzicht", icon: LayoutDashboard },
     { id: "history", label: "Mijn Brieven", icon: FileText },
     { id: "profile", label: "Gebruikersbeheer", icon: User },
   ];
@@ -51,7 +50,7 @@ export default function DashboardPage() {
 
         <main className="flex-1 p-8">
           <header className="flex justify-between items-center mb-8">
-            <h2 className="text-3xl font-bold capitalize">{activeTab === "overview" ? "Dashboard" : activeTab}</h2>
+            <h2 className="text-3xl font-bold capitalize">{activeTab === "history" ? "Mijn Brieven" : activeTab}</h2>
             <button className="flex items-center space-x-2 bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700">
                 <PlusCircle size={20} />
                 <span>Nieuwe brief maken</span>
@@ -59,7 +58,7 @@ export default function DashboardPage() {
           </header>
 
           <section className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
-            <p className="text-gray-600">Welkom terug in je persoonlijke dashboard. Hier beheer je al je gegenereerde brieven en accountinstellingen.</p>
+            <p className="text-gray-600">Welkom terug in je persoonlijke omgeving. Hier beheer je al je gegenereerde brieven en accountinstellingen.</p>
           </section>
         </main>
       </div>
