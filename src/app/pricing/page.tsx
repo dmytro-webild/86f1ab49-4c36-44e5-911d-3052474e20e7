@@ -21,44 +21,41 @@ export default function PricingPage() {
         headingFontWeight="semibold"
     >
       <ReactLenis root>
-        <div id="nav" data-section="nav">
-            <NavbarStyleApple
-                navItems={[
-                  { name: "Home", id: "/" },
-                  { name: "Problemen", id: "/#problemen" },
-                  { name: "Prijzen", id: "/pricing" },
-                  { name: "FAQ", id: "/#faq" },
-                ]}
-                brandName="BriefBaas AI"
+        <NavbarStyleApple
+          navItems={[
+            { name: "Home", id: "/" },
+            { name: "Problemen", id: "/#problemen" },
+            { name: "Prijzen", id: "/pricing" },
+            { name: "FAQ", id: "/#faq" },
+          ]}
+          brandName="BriefBaas AI"
+        />
+        
+        <div className="pt-32 pb-20">
+            <PricingCardEight
+              animationType="slide-up"
+              textboxLayout="default"
+              useInvertedBackground={false}
+              title="Kies je pakket"
+              description="Stripe-powered beveiligde betalingen voor jouw juridische documenten."
+              plans={[
+                { id: "single", badge: "Populair", price: "€9,99", subtitle: "Eén brief", features: ["Volledige klachtbrief", "Toonkeuze", "Direct downloaden"], buttons: [{ text: "Koop nu" }] },
+                { id: "pro", badge: "Professioneel", price: "€29,99", subtitle: "Compleet pakket", features: ["Klacht + Ingebrekestelling", "Juridische checklist", "Prioriteit support"], buttons: [{ text: "Koop nu" }] }
+              ]}
             />
         </div>
 
-        <div id="prijzen" data-section="prijzen">
-          <PricingCardEight
-            animationType="slide-up"
-            textboxLayout="default"
-            useInvertedBackground={false}
-            plans={[
-              { id: "free", badge: "Gratis", price: "€0", subtitle: "Voorbeelden bekijken", features: ["Bekijk voorbeelden", "Beperkte uitleg", "Geen downloads"], buttons: [{ text: "Begin nu" }] },
-              { id: "single", badge: "Populair", price: "€9,99", subtitle: "Eén brief", features: ["Volledige klachtbrief", "Toonkeuze", "Download PDF/Word"], buttons: [{ text: "Koop nu" }] },
-              { id: "complete", badge: "Compleet", price: "€29,99", subtitle: "Compleet pakket", features: ["Klacht + Ingebrekestelling", "Stappenplan", "Bewijschecklist"], buttons: [{ text: "Koop nu" }] },
-            ]}
-            title="Kies je pakket"
-            description="Betaal alleen voor wat je nodig hebt."
-          />
+        <div className="py-10 text-center text-sm opacity-60">
+            <p>© 2025 BriefBaas AI. Disclaimer: Dit platform is geen juridisch adviesbureau. Door betaling ga je akkoord met onze voorwaarden.</p>
         </div>
 
-        <div id="footer" data-section="footer">
-          <FooterMedia
-            imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DRLqekDrDgj7cwgtaTSZZ1Xtzm/modern-dutch-consumer-interface-clean-so-1778242138111-9a9309d0.png?_wi=2"
-            logoText="BriefBaas AI"
-            columns={[
-              { title: "Platform", items: [{ label: "Home", href: "/" }, { label: "Prijzen", href: "/pricing" }] },
-              { title: "Juridisch", items: [{ label: "Disclaimer", href: "#" }, { label: "Algemene voorwaarden", href: "#" }] },
-            ]}
-            copyrightText="© 2025 BriefBaas AI"
-          />
-        </div>
+        <FooterMedia
+          logoText="BriefBaas AI"
+          columns={[
+            { title: "Platform", items: [{ label: "Home", href: "/" }, { label: "Prijzen", href: "/pricing" }] },
+            { title: "Juridisch", items: [{ label: "Disclaimer", href: "#" }, { label: "Algemene voorwaarden", href: "#" }] },
+          ]}
+        />
       </ReactLenis>
     </ThemeProvider>
   );
