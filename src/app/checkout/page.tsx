@@ -48,6 +48,7 @@ export default function CheckoutPage() {
       <NavbarStyleApple
         navItems={[
           { name: "Terug naar home", id: "/" },
+          { name: "Voorbeelden", id: "/#voorbeelden" }
         ]}
         brandName="BriefBaas AI"
       />
