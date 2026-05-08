@@ -37,6 +37,7 @@ export default function PricingPage() {
         <NavbarStyleApple
           navItems={[
             { name: "Home", id: "/" },
+            { name: "Voorbeelden", id: "/#voorbeelden" },
             { name: "Prijzen", id: "/pricing" },
           ]}
           brandName="BriefBaas AI"
