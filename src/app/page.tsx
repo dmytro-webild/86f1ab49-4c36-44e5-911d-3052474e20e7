@@ -52,7 +52,6 @@ export default function LandingPage() {
         { text: "Bekijk voorbeelden", href: "#problemen" },
       ]}
       buttonAnimation="slide-up"
-      imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DRLqekDrDgj7cwgtaTSZZ1Xtzm/modern-dutch-consumer-interface-clean-so-1778242008423-9af5a9d1.png"
       mediaAnimation="opacity"
     />
   </div>
@@ -102,10 +101,10 @@ export default function LandingPage() {
       gridVariant="four-items-2x2-equal-grid"
       useInvertedBackground={false}
       products={[
-        { id: "p1", brand: "Webshop", name: "Product niet geleverd", price: "Klaar voor gebruik", rating: 5, reviewCount: "1.2k", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DRLqekDrDgj7cwgtaTSZZ1Xtzm/a-neatly-arranged-digital-document-page--1778242039615-d54260cf.png" },
-        { id: "p2", brand: "Logistiek", name: "Pakket kwijt", price: "Klaar voor gebruik", rating: 5, reviewCount: "900", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DRLqekDrDgj7cwgtaTSZZ1Xtzm/a-set-of-official-legal-documents-stacke-1778242049106-ca90fe22.png" },
-        { id: "p3", brand: "Automotive", name: "Verborgen gebrek", price: "Klaar voor gebruik", rating: 5, reviewCount: "450", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DRLqekDrDgj7cwgtaTSZZ1Xtzm/a-professional-checklist-on-a-clipboard--1778242057350-48f41b5b.png" },
-        { id: "p4", brand: "Garantie", name: "Defect product", price: "Klaar voor gebruik", rating: 5, reviewCount: "750", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DRLqekDrDgj7cwgtaTSZZ1Xtzm/pdf-file-icon-representing-digital-downl-1778242066220-7eae62d5.png" },
+        { id: "p1", brand: "Webshop", name: "Product niet geleverd", price: "Klaar voor gebruik", rating: 5, reviewCount: "1.2k", imageSrc: "" },
+        { id: "p2", brand: "Logistiek", name: "Pakket kwijt", price: "Klaar voor gebruik", rating: 5, reviewCount: "900", imageSrc: "" },
+        { id: "p3", brand: "Automotive", name: "Verborgen gebrek", price: "Klaar voor gebruik", rating: 5, reviewCount: "450", imageSrc: "" },
+        { id: "p4", brand: "Garantie", name: "Defect product", price: "Klaar voor gebruik", rating: 5, reviewCount: "750", imageSrc: "" },
       ]}
       title="Kies je probleem"
       description="Voor welke situatie heb je hulp nodig?"
@@ -186,7 +185,6 @@ export default function LandingPage() {
 
   <div id="footer" data-section="footer">
       <FooterMedia
-      imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DRLqekDrDgj7cwgtaTSZZ1Xtzm/modern-dutch-consumer-interface-clean-so-1778242138111-9a9309d0.png?_wi=1"
       logoText="BriefBaas AI"
       columns={[
         { title: "Platform", items: [{ label: "Problemen", href: "#problemen" }, { label: "Prijzen", href: "/pricing" }] },
