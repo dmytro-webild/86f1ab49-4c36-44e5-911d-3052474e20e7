@@ -8,7 +8,18 @@ import FooterMedia from '@/components/sections/footer/FooterMedia';
 
 export default function CancelledPage() {
   return (
-    <ThemeProvider>
+    <ThemeProvider 
+      defaultButtonVariant="hover-magnetic" 
+      defaultTextAnimation="entrance-slide" 
+      borderRadius="rounded" 
+      contentWidth="medium" 
+      sizing="medium" 
+      background="circleGradient" 
+      cardStyle="glass-elevated" 
+      primaryButtonStyle="gradient" 
+      secondaryButtonStyle="glass" 
+      headingFontWeight="normal"
+    >
       <ReactLenis root>
         <NavbarStyleApple
           navItems={[
@@ -18,13 +29,13 @@ export default function CancelledPage() {
           brandName="BriefBaas AI"
         />
         <HeroLogoBillboard
-          background={{ variant: "gradient-bars" }}
           logoText="Betaling geannuleerd"
           description="Je betaling is geannuleerd. Geen zorgen, je kunt het op elk gewenst moment opnieuw proberen."
           buttons={[{ text: "Probeer opnieuw", href: "/pricing" }, { text: "Terug naar home", href: "/" }]}
         />
         <FooterMedia
           logoText="BriefBaas AI"
+          imageSrc="https://images.unsplash.com/photo-1557683316-973673baf926?q=80&w=800"
           columns={[
             { title: "Platform", items: [{ label: "Home", href: "/" }, { label: "Prijzen", href: "/pricing" }] }
           ]}
