@@ -13,7 +13,7 @@ import PricingCardEight from '@/components/sections/pricing/PricingCardEight';
 import ProductCardTwo from '@/components/sections/product/ProductCardTwo';
 import TestimonialCardTen from '@/components/sections/testimonial/TestimonialCardTen';
 import TimelineHorizontalCardStack from '@/components/cardStack/layouts/timelines/TimelineHorizontalCardStack';
-import { CheckCircle, Download, FileText, MessageSquare, PenTool, Shield, Smile, Info, Mail } from "lucide-react";
+import { CheckCircle, Download, FileText, MessageSquare, PenTool, Shield, Smile, Info, Mail, AlertCircle, FileCheck, Search, BookOpen, Clock } from "lucide-react";
 
 export default function LandingPage() {
   return (
@@ -80,12 +80,14 @@ export default function LandingPage() {
       textboxLayout="default"
       useInvertedBackground={false}
       features={[
-        { icon: Mail, title: "Product niet geleverd", description: "Voorbeeld van een formele ingebrekestelling voor een webshop." },
-        { icon: Mail, title: "Beschadigd pakket", description: "Voorbeeld van een klachtbrief aan een bezorgdienst." },
-        { icon: Mail, title: "Verborgen gebrek", description: "Voorbeeld van een brief bij aankoop van een tweedehands auto." },
+        { icon: Mail, title: "Product niet geleverd", description: "Direct geformuleerd volgens consumentenrecht om de leverplicht te benadrukken." },
+        { icon: AlertCircle, title: "Beschadigd product", description: "Met verwijzing naar de conformiteitseis, essentieel voor een succesvolle claim." },
+        { icon: Clock, title: "Retourbetaling uitblijft", description: "Juridisch onderbouwde sommatie om de terugbetalingstermijn te handhaven." },
+        { icon: Search, title: "Verborgen gebrek", description: "Focus op de onderzoeksplicht en mededelingsplicht bij koopovereenkomsten." },
+        { icon: BookOpen, title: "Abonnement opzeggen", description: "Duidelijk opzegbericht met inachtneming van de wettelijke opzegtermijnen." },
       ]}
-      title="Voorbeelden"
-      description="Bekijk hoe jouw brieven eruit kunnen zien."
+      title="Voorbeelden van brieven"
+      description="Bekijk onze meest gebruikte briefmodellen en de juridische focus per voorbeeld."
     />
   </div>
 
