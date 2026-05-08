@@ -47,6 +47,7 @@ export default function LandingPage() {
         { text: "Start direct", href: "/pricing" },
         { text: "Bekijk voorbeelden", href: "/#voorbeelden" },
       ]}
+      background={{ variant: "gradient-bars" }}
       buttonAnimation="slide-up"
       mediaAnimation="opacity"
     />
