@@ -12,7 +12,7 @@ export default function PrivacyPage() {
         layout="page"
         title="Privacybeleid"
         sections={[
-          { heading: "1. Gegevensverwerking", content: { text: "Wij respecteren je privacy en verwerken gegevens enkel noodzakelijk voor onze dienstverlening." } }
+          { heading: "1. Gegevensverwerking", content: { type: "paragraph", text: "Wij respecteren je privacy en verwerken gegevens enkel noodzakelijk voor onze dienstverlening." } }
         ]}
       />
       <FooterMedia logoText="BriefBaas AI" columns={[{title: "Links", items: [{label: "Home", href: "/"}]}]} videoSrc="https://assets.mixkit.co/videos/preview/mixkit-lawyer-office-desk-4395-large.mp4" />
