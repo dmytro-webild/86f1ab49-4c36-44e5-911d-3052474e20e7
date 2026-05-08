@@ -2,18 +2,14 @@
 
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import ReactLenis from "lenis/react";
-import ContactCTA from '@/components/sections/contact/ContactCTA';
-import FaqDouble from '@/components/sections/faq/FaqDouble';
 import FeatureBorderGlow from '@/components/sections/feature/featureBorderGlow/FeatureBorderGlow';
 import FooterMedia from '@/components/sections/footer/FooterMedia';
 import HeroLogoBillboard from '@/components/sections/hero/HeroLogoBillboard';
-import MetricCardOne from '@/components/sections/metrics/MetricCardOne';
 import NavbarStyleApple from '@/components/navbar/NavbarStyleApple/NavbarStyleApple';
 import PricingCardEight from '@/components/sections/pricing/PricingCardEight';
 import ProductCardTwo from '@/components/sections/product/ProductCardTwo';
-import TestimonialCardTen from '@/components/sections/testimonial/TestimonialCardTen';
 import TimelineHorizontalCardStack from '@/components/cardStack/layouts/timelines/TimelineHorizontalCardStack';
-import { CheckCircle, Download, FileText, MessageSquare, PenTool, Shield, Smile, Info, Mail, AlertCircle, FileCheck, Search, BookOpen, Clock } from "lucide-react";
+import { CheckCircle, Download, FileText, MessageSquare, PenTool, Mail, AlertCircle, Info, Search, BookOpen, Clock } from "lucide-react";
 
 export default function LandingPage() {
   return (
@@ -45,7 +41,6 @@ export default function LandingPage() {
 
   <div id="hero" data-section="hero">
       <HeroLogoBillboard
-      background={{ variant: "gradient-bars" }}
       logoText="BriefBaas AI"
       description="Maak binnen 2 minuten een sterke klachtbrief voor problemen met webshops, auto's, pakketdiensten en meer. Direct te downloaden in duidelijke taal."
       buttons={[
@@ -80,11 +75,11 @@ export default function LandingPage() {
       textboxLayout="default"
       useInvertedBackground={false}
       features={[
-        { icon: Mail, title: "Product niet geleverd", description: "Direct geformuleerd volgens consumentenrecht om de leverplicht te benadrukken.", imageSrc: "https://images.unsplash.com/photo-1557683316-973673baf926?q=80&w=800" },
-        { icon: AlertCircle, title: "Beschadigd product", description: "Met verwijzing naar de conformiteitseis, essentieel voor een succesvolle claim.", imageSrc: "https://images.unsplash.com/photo-1563986768609-322da13575f3?q=80&w=800" },
-        { icon: Clock, title: "Retourbetaling uitblijft", description: "Juridisch onderbouwde sommatie om de terugbetalingstermijn te handhaven.", imageSrc: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?q=80&w=800" },
-        { icon: Search, title: "Verborgen gebrek", description: "Focus op de onderzoeksplicht en mededelingsplicht bij koopovereenkomsten.", imageSrc: "https://images.unsplash.com/photo-1584433148459-74410fded98a?q=80&w=800" },
-        { icon: BookOpen, title: "Abonnement opzeggen", description: "Duidelijk opzegbericht met inachtneming van de wettelijke opzegtermijnen.", imageSrc: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=800" },
+        { icon: Mail, title: "Product niet geleverd", description: "Direct geformuleerd volgens consumentenrecht om de leverplicht te benadrukken." },
+        { icon: AlertCircle, title: "Beschadigd product", description: "Met verwijzing naar de conformiteitseis, essentieel voor een succesvolle claim." },
+        { icon: Clock, title: "Retourbetaling uitblijft", description: "Juridisch onderbouwde sommatie om de terugbetalingstermijn te handhaven." },
+        { icon: Search, title: "Verborgen gebrek", description: "Focus op de onderzoeksplicht en mededelingsplicht bij koopovereenkomsten." },
+        { icon: BookOpen, title: "Abonnement opzeggen", description: "Duidelijk opzegbericht met inachtneming van de wettelijke opzegtermijnen." },
       ]}
       title="Voorbeelden van brieven"
       description="Bekijk onze meest gebruikte briefmodellen en de juridische focus per voorbeeld."
